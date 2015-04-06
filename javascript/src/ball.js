@@ -54,14 +54,14 @@ class Ball {
         }
 
         if (this.hitPlayerPaddle(playerPaddle)) {
-            this.x_speed = this.x_speed * -1;
-            this.y_speed += (playerPaddle.y_speed / 2);
+            this.x_speed = (this.x_speed + 1) * -1;
+            this.y_speed += (playerPaddle.y_speed);
             this.x += this.x_speed * -1;
         }
 
         if (this.hitComputerPaddle(computerPaddle)) {
-            this.x_speed = this.x_speed * -1;
-            this.y_speed += (playerPaddle.y_speed / 2);
+            this.x_speed = (this.x_speed - 1) * -1;
+            this.y_speed += (playerPaddle.y_speed);
             this.x += this.x_speed * -1;
         }
     }

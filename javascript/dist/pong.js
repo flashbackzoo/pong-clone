@@ -82,14 +82,14 @@ var Ball = (function () {
             }
 
             if (this.hitPlayerPaddle(playerPaddle)) {
-                this.x_speed = this.x_speed * -1;
-                this.y_speed += playerPaddle.y_speed / 2;
+                this.x_speed = (this.x_speed + 1) * -1;
+                this.y_speed += playerPaddle.y_speed;
                 this.x += this.x_speed * -1;
             }
 
             if (this.hitComputerPaddle(computerPaddle)) {
-                this.x_speed = this.x_speed * -1;
-                this.y_speed += playerPaddle.y_speed / 2;
+                this.x_speed = (this.x_speed - 1) * -1;
+                this.y_speed += playerPaddle.y_speed;
                 this.x += this.x_speed * -1;
             }
         }
@@ -201,10 +201,10 @@ var Computer = (function () {
 
             if (diff < 0 && diff < -4) {
                 // Max speed top
-                diff = -5;
+                diff = -4;
             } else if (diff > 0 && diff > 4) {
                 // Max speed bottom
-                diff = 5;
+                diff = 4;
             }
 
             this.paddle.move(0, diff);

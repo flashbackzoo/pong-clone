@@ -17,9 +17,9 @@ class Computer {
         var diff = ((this.paddle.y + (this.paddle.height / 2)) - y_pos) * -1;
 
         if (diff < 0 && diff < -4) { // Max speed top
-            diff = -5;
+            diff = -4;
         } else if (diff > 0 && diff > 4) { // Max speed bottom
-            diff = 5;
+            diff = 4;
         }
 
         this.paddle.move(0, diff);
