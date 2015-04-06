@@ -1,14 +1,14 @@
-export var CANVAS_WIDTH = 800;
-export var CANVAS_HEIGHT = 500;
-export var CANVAS_BACKGROUND_COLOR = '#000000';
+export const CANVAS_WIDTH = 800;
+export const CANVAS_HEIGHT = 500;
+export const CANVAS_BACKGROUND_COLOR = '#000000';
 
-export var PADDLE_WIDTH = 10;
-export var PADDLE_HEIGHT = 50;
-export var PADDLE_COLOR = '#009900';
-export var PADDLE_BUFFER = 5;
+export const PADDLE_WIDTH = 10;
+export const PADDLE_HEIGHT = 50;
+export const PADDLE_COLOR = '#009900';
+export const PADDLE_BUFFER = 5;
 
-export var BALL_RADIUS = 5;
-export var BALL_COLOR = '#ffffff';
+export const BALL_RADIUS = 5;
+export const BALL_COLOR = '#ffffff';
 
-export var PLAYER_UP_KEY_CODE = '87'; // w
-export var PLAYER_DOWN_KEY_CODE = '83'; // s
+export const PLAYER_UP_KEY_CODE = '87'; // w
+export const PLAYER_DOWN_KEY_CODE = '83'; // s
