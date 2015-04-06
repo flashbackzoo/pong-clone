@@ -45,7 +45,7 @@ var Ball = (function () {
     }, {
         key: 'hitComputerPaddle',
         value: function hitComputerPaddle(paddle) {
-            return this.posRight > paddle.x && (this.posTop > paddle.y && this.posBottom < paddle.y + paddle.height);
+            return this.posRight > paddle.x && (this.posBottom > paddle.y && this.posTop < paddle.y + paddle.height);
         }
     }, {
         key: 'hitBottomWall',
@@ -55,7 +55,7 @@ var Ball = (function () {
     }, {
         key: 'hitPlayerPaddle',
         value: function hitPlayerPaddle(paddle) {
-            return this.posLeft < paddle.x + paddle.width && (this.posTop > paddle.y && this.posBottom < paddle.y + paddle.height);
+            return this.posLeft < paddle.x + paddle.width && (this.posBottom > paddle.y && this.posTop < paddle.y + paddle.height);
         }
     }, {
         key: 'pointScored',

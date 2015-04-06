@@ -21,7 +21,7 @@ class Ball {
     }
 
     hitComputerPaddle(paddle) {
-        return this.posRight > paddle.x && (this.posTop > paddle.y && this.posBottom < paddle.y + paddle.height);
+        return this.posRight > paddle.x && (this.posBottom > paddle.y && this.posTop < paddle.y + paddle.height);
     }
 
     hitBottomWall() {
@@ -29,7 +29,7 @@ class Ball {
     }
 
     hitPlayerPaddle(paddle) {
-        return (this.posLeft < paddle.x + paddle.width) && (this.posTop > paddle.y && this.posBottom < paddle.y + paddle.height);
+        return (this.posLeft < paddle.x + paddle.width) && (this.posBottom > paddle.y && this.posTop < paddle.y + paddle.height);
     }
 
     pointScored() {
